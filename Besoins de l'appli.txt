@@ -1,0 +1,48 @@
+Ecran principal
+
+3 onglets horizontaux
+
+Thèmes -> Groupes -> Liens
+
+
+Une couleur associée à chaque type
+
+Thèmes -> rouge
+Groupes -> orange
+Liens -> vert
+
+
+Chaque type contient des encadrés, possibilité d'y associer une image de pochette plus tard.
+
+Pour les Thèmes et les groupes, afficher en mode vignette encadré, plus tard ajouter 
+la possibilité d'associer une image de pochette. De plus, possibilité, soit d'ouvrir tous 
+les Liens qu'ils contiennent, afficher le nombre de liens dans l'encadré, 
+soit éditer l'objet pour réorganiser ce qu'il contient, soit supprimer l'objet.
+La suppression d'un thème doit supprimer les groupes à l'intérieur, mais pas les url.
+La suppression d'un groupe ne doit pas supprimer non plus les url. 
+
+Pour les liens, affichage en liste, séparés par thème et groupe, afficher en priorité 
+les Liens orphelins. Donner uniquement possibilité de les ouvrir, éditer supprimer
+et associer à des groupes.
+Ajouter également champs supplémentaires avec login password si besoin de se logger 
+sur ce site, et fonctionnalité copier/coller rapide.
+
+Associer à tous les objets des priorités, ce sera l'ordre d'affichage de chaque élément.
+Utiliser le drag drop pour réorganiser les différents objets.
+
+
+Définition d'un Thème : 
+
+Id | titre | description | image_url | priorite
+
+Définition d'un Groupe : 
+
+Id | fk_theme_id | titre | description | image_url | priorite
+
+Définition d'un Lien : 
+
+Id | fk_groupe_id | titre | description | login | password | priorite
+
+
+
+
